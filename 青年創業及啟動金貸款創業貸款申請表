@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青年創業及啟動金貸款創業貸款申請表</title>
+    <link rel="icon" href="https://i.imgur.com/aGlsnZ9.png"
+</head>
+<body>
+    <h1>青年創業及啟動金貸款創業貸款申請表</h1> 
+    <h4> (申請金額 100 萬元以下適用)</h4>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <th>一、申請資料</th>
+                <hr/>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label align="left">一、申請人類別：</label>
+                </td>
+                <td>
+                    <input type="radio" id="business" name="category" value="business">
+                    <label for="business">事業體</label>
+                    <input type="radio" id="principal" name="category" value="principal">
+                    <label for="principal">事業體之負責人</label>  
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="person" align="left">二、負責人：</label>
+                </td>
+                <td>
+                    <input type="text" id="person" name="person" minlength="2" maxlength="50" size="5">
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="entity" align="left">三、事業體名稱：</label> 
+                </td>
+                <td>
+                    <select name="entity" id="entity" align="left" required>
+                        <option value="CoLtd">股份有限公司</option>
+                        <option value="limitedCompany">有限公司</option>
+                        <option value="partner">合夥</option>
+                        <option value="solo">獨資</option>
+                        <option value="other">其他</option>
+                    </select>    
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label align="left">四、申請背景：</label>
+                </td>
+                <td>
+                    <input type="radio" id="bThis" name="background" value="bThis">
+                    <label for="bthis" align="left">曾獲貸本項貸款，獲貸金融機構：</label>
+                    <input type="text" id="bThis" name="background">
+                    <label>已全數清償：</label>
+                    <input type="radio" id="repayYes" name="repay" value="yes">
+                    <label for="repayYes">是</label>
+                    <input type="radio" id="repayNo" name="repay" value="no">
+                    <label for="repayNo">否</label>
+                    <br>
+                    <input type="radio" id="bOther" name="background" value="bOther">
+                    <label for="bOther" align="left">曾獲貸其他政府辦理之創業貸款：</label>
+                    <input type="text" id="bOther" name="background">
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label align="left">五、所獲技術、<br>獎項及輔導資源<br>(含事業體或申請人)：</label> 
+                </td>
+                <td>
+                    <input type="checkbox" id="resource" name="resource1" value="bGet">
+                    <label for="resource" align="left">曾獲貸其他政府辦理之創業貸款：</label>
+                    <textarea name="resource"  id="resource1"  placeholder="請輸入曾獲貸其他政府辦理之創業貸款。"></textarea>
+                    <br>
+                    <input type="checkbox" id="resource" name="resource2" value="bAwards">
+                    <label for="resource" align="left">曾獲相關獎項：</label>
+                    <textarea name="resource"  id="resource2"  placeholder="請輸入曾獲相關獎項。"></textarea>
+                    <br>
+                    <input type="checkbox" id="resource" name="resource3" value="bAwards">
+                    <label for="resource" align="left">經政府立案之育成機構輔導： </label>
+                    <textarea name="resource"  id="resource3"  placeholder="請輸入經政府立案之育成機構輔導。"></textarea>
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label align="left">六、本次申請之<br>貸款用途與金額：</label>
+                </td>
+                <td>
+                    <input type="radio" id="reserve" name="use" value="reserve">
+                    <label for="reserve" align="left">準備金及開辦費：</label>
+                    <input type="number" id="reserve" name="use" placeholder="新臺幣">
+                    <label>元，</label>
+                    <input type="number" id="reserve" name="use" value="reyear"=>
+                    <label>年</label>
+                    <input  type="number" id="reserve" name="use" value="reyear1" placeholder="含本金寬限期">
+                    <label>年。</label>
+                    <br>
+                    <input type="radio" id="turnover" name="use" value="turnover">
+                    <label for="turnover" align="left">週轉性支出：</label>
+                    <input type="number" id="turnover" name="use" placeholder="新臺幣">
+                    <label>元，</label>
+                    <input type="number" id="turnover" name="use" value="reyear"=>
+                    <label>年</label>
+                    <input  type="number" id="turnover" name="use" value="reyear1" placeholder="含本金寬限期">
+                    <label>年。</label>
+                    <br>
+                    <label>用途：</label>
+                    <input type="radio" id="costs1" name="use" value="costs1">
+                    <label for="costs1" align="left">水電燃料費</label>
+                    <input type="radio" id="costs2" name="use" value="costs2">
+                    <label for="costs2" align="left">薪資費用</label>
+                    <input type="radio" id="costs3" name="use" value="costs3">
+                    <label for="costs3" align="left">營業租金</label>
+                    <input type="radio" id="costs4" name="use" value="costs4">
+                    <label for="costs4" align="left">購料費用</label>
+                    <input type="radio" id="costs5" name="use" value="costs5">
+                    <label for="costs5" align="left">其他：</label>
+                    <input type="text" id="costs5" name="use" size="5">
+                    <br>
+                    <input type="radio" id="capital" name="use" value="turnover">
+                    <label for="capital" align="left">資本性支出：</label>
+                    <input type="number" id="capital" name="use" placeholder="新臺幣">
+                    <label>元，</label>
+                    <input type="number" id="capital" name="use" value="reyear">
+                    <label>年</label>
+                    <input type="number" id="capital" name="use" value="reyear1" placeholder="含本金寬限期">
+                    <label>年。</label>
+                    <br>
+                    <label for="costs6" align="left">所購置機器設備：</label>
+                    <input type="text" id="costs6" name="use" size="5">
+                </td>
+            </tr>
+        <table>
+            <tr>
+                <th>二、申請人之基本資料</th>
+                <td> (如以事業體申請，請填寫負責人資料) </td>
+                <hr/>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="identity" align="left">身分證字號：</label>
+                </td>
+                <td>
+                    <input type="text" id="identity" name="identity" minlength="10" size="10" required>
+                </td>
+                <td>
+                    <label for="birthday" align="left">出生日期：</label>
+                </td>
+                <td>
+                    <input type="date" id="birthday" name="birthday" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone" align="left">連絡電話：</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" name="phone" required>
+                </td>
+                <td>
+                    <label for="email" align="left">電子郵件：</label>
+                </td>
+                <td>
+                    <input type="emial" id="email" name="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edu" align="left">教育程度：</label> 
+                </td>
+                <td>
+                    <input type="radio" id="edu1" name="use" value="edu1" required>
+                    <label for="edu1" align="left">國中/小</label>
+                    <input type="radio" id="edu2" name="use" value="edu2">
+                    <label for="edu2" align="left">高中職</label>
+                    <input type="radio" id="edu3" name="use" value="edu3">
+                    <label for="edu3" align="left">專科(含)以下</label>
+                    <input type="radio" id="edu4" name="use" value="edu4">
+                    <label for="edu4" align="left">大學</label>
+                    <input type="radio" id="edu5" name="use" value="edu5">
+                    <label for="edu5" align="left">碩士以上
+                    </label>
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="residence" align="left">戶籍地址：</label> 
+                </td>
+                <td>
+                    <input type="text" id="residence" name="residence" size="50" required>
+                </td>
+                <td>
+                    <label for="mailing" align="left">通訊地址：</label> 
+                </td>
+                <td>
+                    <input type="radio" id="mailing" name="residence" value="residence">
+                    <label>同戶籍</label>
+                    <input type="text" id="mailing" name="mailing" size="50" >
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="experience" align="left">經歷：</label> 
+                </td>
+                <td>
+                    <textarea  name="experience"  id="experience"  placeholder="序號/服務處所名稱/職稱/年資/服務處所名稱/職稱/年資" rows="10" cols="50"></textarea>
+                </td>
+                <td>
+                    <label for="course" align="left">輔導課程：</label> 
+                </td>
+                <td>
+                    <textarea  name="course"  id="course"  placeholder="序號/課程內容/授課單位/時數/課程內容/授課單位/時數" rows="10" cols="50"></textarea>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>三、新創或所營事業資料</th>
+                <hr/>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="material" align="left">一、事業資料：</label> 
+                </td>
+                <td>
+                    <label for="material">(一)統一編號：</label> 
+                    <input type="number" id="material" name="uniformNumbers" max="8"required>
+                </td>
+                <td>
+                    <label for="material"> &emsp; (二)設立登記日期：</label>
+                    <input type="date" id="register" name="register" required>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <label align="left">二、事業地址：</label> 
+                </td>
+                <td>
+                    <tr>
+                        <td>
+                            <label for="operateAddress" align="left">營業地址：</label> 
+                            <input type="text" id="operateAddress" name="operateAddress" size="50" placeholder="郵遞區號(3碼)+地址">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="factoryAddress" align="left">工廠地址：</label> 
+                            <input type="text" id="factoryAddress" name="factoryAddress" size="50" placeholder="郵遞區號(3碼)+地址" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="otherAddress" align="left">其他：</label> 
+                            <input type="text" id="otherAddress" name="otherAddress" size="54"  placeholder="郵遞區號(3碼)+地址">
+                            <br>
+                            <label for="otherAddress" align="left">(請說明)</label>
+                        </td>
+                    </tr>
+                </td>
+                <td rowspan="4">
+                    <label align="left" >&emsp; &emsp;連絡電話：</label> 
+                </td>
+                <td>
+                    <tr>
+                        <td>
+                            <input type="tel" id="operatetel" name="operateTel" placeholder="營業地址電話">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="tel" id="factoryTel" name="factoryTel" placeholder="工廠地址電話">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <input type="tel" id="otherTel" name="otherTel"placeholder="其他地址電話">
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="serve" align="left">三、產品及服務項目：</label> 
+                </td>
+                <td colspan="2"> 
+                    <textarea name="serve"  id="serve" rows="5" cols="100"></textarea>
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="plan" align="left">四、經營計畫</label> 
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="plan1" align="left">（一）企業經營與產銷：</label>  
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label align="left">項目</label>
+                </td>
+                <td>
+                    <label align="left">&emsp;&emsp;&emsp;&emsp;自我評估級距</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">1.對所營產業熟悉度 </label>
+                </td>
+                <td>
+                    <label for="plan1.1" align="left">&emsp;入門</label>
+                    <input type="range" id="plan1.1" name="plan1" min="1" max="9" value="1" step="1" required>
+                    <label>熟悉</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">2.銷售(服務)項目</label>
+                </td>
+                <td>
+                    <label for="plan1.2" align="left" align="left">&emsp;單一</label>
+                    <input type="range" id="plan1.2" name="plan1" min="1" max="9" value="1" step="1" required>
+                    <label>多元</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">3.原料供應及採購來源 </label>
+                </td>
+                <td>
+                    <label for="plan1.3" align="left">&emsp;缺乏 </label>
+                    <input type="range" id="plan1.3" name="plan1" min="1" max="9" value="1" step="1" required>
+                    <label>穩定</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">4.生產及服務複雜度</label>
+                </td>
+                <td>
+                    <label for="plan1.4" align="left">&emsp;單純  </label>
+                    <input type="range" id="plan1.4" name="plan1" min="1" max="9" value="1" step="1" required>
+                    <label>複雜</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">5.核心技術與專利(證照)</label>
+                </td>
+                <td>
+                    <label for="plan1.5" align="left">&emsp;簡單</label>
+                    <input type="range" id="plan1.5" name="plan1" min="1" max="9" value="1" step="1" required>
+                    <label>困難</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">6.人力培育與管理</label>
+                </td>
+                <td>
+                    <label for="plan1.6" align="left">&emsp;簡易</label>
+                    <input type="range" id="plan1.6" name="plan1" min="1" max="9" value="1" step="1" required>
+                    <label>嚴謹</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">7.銷售(服務)通路多寡</label>
+                </td>
+                <td>
+                    <label for="plan1.7" align="left">&emsp;單一</label>
+                    <input type="range" id="plan1.7" name="plan1" min="1" max="9" value="1" step="1" required>
+                    <label>多元</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">8.品質(客服)管理及改進</label>
+                </td>
+                <td>
+                    <label for="plan1.8" align="left">&emsp;鬆散</label>
+                    <input type="range" id="plan1.8" name="plan1" min="1" max="9" value="1" step="1" required>
+                    <label>完善</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="plan2" align="left">（二）市場分析與行銷：</label>  
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label align="left">項目</label>
+                </td>
+                <td>
+                    <label align="left">&emsp;&emsp;&emsp;&emsp;自我評估級距</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">1.所營產業競爭程度 </label>
+                </td>
+                <td>
+                    <label for="plan2.1" align="left">&emsp;激烈</label>
+                    <input type="range" id="plan2.1" name="plan2" min="1" max="9" value="1" step="1" required>
+                    <label>緩和</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">2.所營產業需求前景</label>
+                </td>
+                <td>
+                    <label for="plan2.2" align="left" align="left">&emsp;緊縮</label>
+                    <input type="range" id="plan2.2" name="plan2" min="1" max="9" value="1" step="1" required>
+                    <label>成長</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">3.市場目標客群</label>
+                </td>
+                <td>
+                    <label for="plan2.3" align="left">&emsp;小眾</label>
+                    <input type="range" id="plan2.3" name="plan2" min="1" max="9" value="1" step="1" required>
+                    <label>大眾</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">4.生產及服務複雜度</label>
+                </td>
+                <td>
+                    <label for="plan2.4" align="left">&emsp;眾多</label>
+                    <input type="range" id="plan2.4" name="plan2" min="1" max="9" value="1" step="1" required>
+                    <label>稀少</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">5.定價策略獲利性</label>
+                </td>
+                <td>
+                    <label for="plan2.5" align="left">&emsp;低利</label>
+                    <input type="range" id="plan2.5" name="plan2" min="1" max="9" value="1" step="1" required>
+                    <label>高潤</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label align="left">6.行銷策略與管道</label>
+                </td>
+                <td>
+                    <label for="plan1.6" align="left">&emsp;缺乏</label>
+                    <input type="range" id="plan1.6" name="plane1" min="1" max="9" value="1" step="1" required>
+                    <label>多元</label>
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label align="left">五、預估財務狀況</label> 
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                    <label for="firstEvaluate" align="left">(一)預估獲貸後第一年營業(服務)收入：</label>
+                </td>
+                <td>
+                    <input type="radio" id="firstEvaluate1" name="firstEvaluate" value="firstEvaluate1" required>
+                    <label for="firstEvaluate1">0~50 萬 </label>
+                    <input type="radio" id="firstEvaluate2" name="firstEvaluate" value="firstEvaluate2">
+                    <label for="firstEvaluate2">51~100 萬 </label>
+                    <input type="radio" id="firstEvaluate3" name="firstEvaluate" value="firstEvaluate3">
+                    <label for="firstEvaluate3">101~200 萬 </label>
+                    <input type="radio" id="firstEvaluate4" name="firstEvaluate" value="firstEvaluate4">
+                    <label for="firstEvaluate4">201~300 萬 </label>
+                    <input type="radio" id="firstEvaluate5" name="firstEvaluate" value="firstEvaluate5">
+                    <label for="firstEvaluate5">301~400 萬 </label>
+                    <input type="radio" id="firstEvaluate6" name="firstEvaluate" value="firstEvaluate6">
+                    <label for="firstEvaluate6">超過400萬 </label>
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td rowspan="3">
+                    <label for="secEvaluate" align="left">(二)預估獲貸後第二年起營業(服務)收入年成長率：</label>
+                </td>
+                <td>
+                    <label>第二年</label>
+                    <input type="radio" id="secEvaluate1" name="secEvaluate" value="secEvaluate1" required>
+                    <label for="secEvaluate1">0%～2.5%  </label>
+                    <input type="radio" id="secEvaluate2" name="secEvaluate" value="secEvaluate2">
+                    <label for="secEvaluate2">2.5%～5% </label>
+                    <input type="radio" id="secEvaluate3" name="secEvaluate" value="secEvaluate3">
+                    <label for="secEvaluate3">5%～10%  </label>
+                    <input type="radio" id="secEvaluate4" name="secEvaluate" value="secEvaluate4">
+                    <label for="secEvaluate4">10%～20%  </label>
+                    <input type="radio" id="secEvaluate5" name="secEvaluate" value="secEvaluate5">
+                    <label for="secEvaluate5">超過20%</label>
+                </td>
+            <tr/>
+            <tr>
+                <td>
+                    <label>第三年起</label>
+                    <input type="radio" id="tsecEvaluate1" name="tsecEvaluate" value="tsecEvaluate1" required>
+                    <label for="tsecEvaluate1">0%～2.5%  </label>
+                    <input type="radio" id="tsecEvaluate2" name="tsecEvaluate" value="tsecEvaluate2">
+                    <label for="tsecEvaluate2">2.5%～5% </label>
+                    <input type="radio" id="tsecEvaluate3" name="tsecEvaluate" value="tsecEvaluate3">
+                    <label for="tsecEvaluate3">5%～10%  </label>
+                    <input type="radio" id="tsecEvaluate4" name="tsecEvaluate" value="tsecEvaluate4">
+                    <label for="tsecEvaluate4">10%～20%  </label>
+                    <input type="radio" id="tsecEvaluate5" name="tsecEvaluate" value="tsecEvaluate5">
+                    <label for="tsecEvaluate5">超過 0%</label>
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td rowspan="4">
+                    <label for="secEvaluate" align="left">(三)預估獲貸後每年息前稅前淨利率(扣除相關成本及費用)：</label>
+                </td>
+                <td>
+                    <label>第一年&emsp; </label>
+                    <input type="radio" id="fthirdEvaluate1" name="fthirdEvaluate" value="fthirdEvaluate1"required>
+                    <label for="fthirdEvaluate1">0%～2.5%  </label>
+                    <input type="radio" id="fthirdEvaluate2" name="fthirdEvaluate" value="fthirdEvaluate2">
+                    <label for="fthirdEvaluate2">2.5%～5% </label>
+                    <input type="radio" id="fthirdEvaluate3" name="fthirdEvaluate" value="fthirdEvaluate3">
+                    <label for="fthirdEvaluate3">5%～10%  </label>
+                    <input type="radio" id="fthirdEvaluate4" name="fthirdEvaluate" value="fthirdEvaluate4">
+                    <label for="fthirdEvaluate4">10%～20%  </label>
+                    <input type="radio" id="fthirdEvaluate5" name="fthirdEvaluate" value="fthirdEvaluate5">
+                    <label for="fthirdEvaluate5">超過20%</label>
+                </td>
+            <tr/>
+            <tr>
+                <td>
+                    <label>第二年&emsp; </label>
+                    <input type="radio" id="sthirdEvaluate1" name="sthirdEvaluate" value="sthirdEvaluate1"required>
+                    <label for="sthirdEvaluate1">0%～2.5%  </label>
+                    <input type="radio" id="sthirdEvaluate2" name="sthirdEvaluate" value="sthirdEvaluate2">
+                    <label for="sthirdEvaluate2">2.5%～5% </label>
+                    <input type="radio" id="sthirdEvaluate3" name="sthirdEvaluate" value="sthirdEvaluate3">
+                    <label for="sthirdEvaluate3">5%～10%  </label>
+                    <input type="radio" id="sthirdEvaluate4" name="sthirdEvaluate" value="sthirdEvaluate4">
+                    <label for="sthirdEvaluate4">10%～20%  </label>
+                    <input type="radio" id="sthirdEvaluate5" name="sthirdEvaluate" value="sthirdEvaluate5">
+                    <label for="sthirdEvaluate5">超過20%</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>第三年起</label>
+                    <input type="radio" id="tthirdEvaluate1" name="tthirdEvaluate" value="tthirdEvaluate1" required>
+                    <label for="tthirdEvaluate1">0%～2.5%  </label>
+                    <input type="radio" id="tthirdEvaluate2" name="tthirdEvaluate" value="tthirdEvaluate2">
+                    <label for="tthirdEvaluate2">2.5%～5% </label>
+                    <input type="radio" id="tthirdEvaluate3" name="tthirdEvaluate" value="tthirdEvaluate3">
+                    <label for="tthirdEvaluate3">5%～10%  </label>
+                    <input type="radio" id="tthirdEvaluate4" name="tthirdEvaluate" value="tthirdEvaluate4">
+                    <label for="tthirdEvaluate4">10%～20%  </label>
+                    <input type="radio" id="tthirdEvaluate5" name="tthirdEvaluate" value="tthirdEvaluate5">
+                    <label for="tthirdEvaluate5">超過 20%</label>
+                </td>
+            </tr>
+        </table>
+        <hr/>
+        <br>
+        <label for="check">請檢附以下書件：</label>
+        <br>
+        <input type="checkbox"  id="check" name="check1" value="check1" required>
+        <label for="check">負責人國民身分證正反面影本</label>
+        <br>
+        <input type="checkbox"  id="check" name="check2" value="check2" required>
+        <label for="check">所營事業設立登記或立案登記之證明文件</label>
+        <br>
+        <input type="checkbox"  id="check" name="check3" value="check3" required>
+        <label for="check">參與政府創業輔導相關課程或活動之證明文件</label>
+        <br>
+        <input type="checkbox"  id="check" name="check4" value="check4" required>
+        <label for="check">青年創業及啟動金貸款切結書</label>
+        <br>
+        <input type="checkbox"  id="check" name="check5" value="check5" required>
+        <label for="check">其他金融機構指定書件</label>
+        <br>
+        <br>
+        <br>
+        <h3>此致</h3>
+        <br>
+        <input type="text" id="bank" name="bank" size="80">
+        <label for="bank">銀行/信用合作社</label>
+        <br>
+        <br>
+        <label for="sign">申請人簽章：</label>
+        <input type="file" id="sign" name="sign" accept="image/png,image/jpeg,file/pdf"
+        <label for="signDate">中華民國</label>
+        <input type="date" id="signDAte">
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="確認送出">
+        <input type="reset" value="清除表單">
+    </form>    
+</body>
+</html>
